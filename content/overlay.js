@@ -229,7 +229,7 @@ var emptyem = {
     try {
       var pref = Cc["@mozilla.org/preferences-service;1"]
                     .getService(Ci.nsIPrefBranch);
-      show_prompt = !pref.getBoolPref("mail." + aCommand + ".dontAskAgain");
+      show_prompt = !pref.getBoolPref("mailnews." + aCommand + ".dontAskAgain");
     } catch (ex) {}
 
     if (show_prompt) {
@@ -238,8 +238,8 @@ var emptyem = {
                              .getService(Ci.nsIPromptService);
       var bundle = document.getElementById("bundle_messenger");
       var ok = prompt_service.confirmEx(window,
-                                       bundle.getString(aCommand + "Title"),
-                                       bundle.getString(aCommand + "Message"),
+                                       bundle.getString(aCommand + "FolderTitle"),
+                                       bundle.getString(aCommand + "FolderMessage"),
                                        prompt_service.STD_YES_NO_BUTTONS,
                                        null, null, null,
                                        bundle.getString(aCommand + "DontAsk"),
