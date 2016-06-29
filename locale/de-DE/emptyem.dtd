@@ -1,0 +1,5 @@
+<!ENTITY emptyem.label "Leere alles">
+<!ENTITY emptyemContext.label "Leere alles">
+<!ENTITY emptyemContext.accesskey "E">
+<!ENTITY emptyemToolbar.label "Leere alles">
+<!ENTITY emptyemToolbar.tooltip "Leere eingestellte Junk-Ordner und Papierkörbe">

@@ -1,0 +1,29 @@
+<!ENTITY prefwindow.title "Empty 'em Einstellungen">
+<!ENTITY pane1.title "Empty 'em Einstellungen">
+<!ENTITY prefwindow.heading "Empty 'em Einstellungen festlegen:">
+
+<!ENTITY overridedeleteconfirm.label "Bestätigungseinstellung der Ordner überschreiben">
+<!ENTITY overridedeleteconfirm.accesskey "O">
+<!ENTITY overridedeleteconfirm.description "Normalerweise verlangt Thunderbird eine Bestätigung für das Löschen der ausgewählten Ordner. Markieren Sie diese Box, um dieses Verhalten zu überschreiben und den Bestätigungsdialog zu unterdrücken.">
+
+<!ENTITY prefwindow.selectionheading "Welche Ordner sollen geleert werden?">
+
+<!ENTITY selecttrashdelete.label "Papierkörbe leeren">
+<!ENTITY selecttrashdelete.description "Papierkörbe bei der Leerung mitberücksichtigen">
+<!ENTITY selecttrashdelete.accesskey "T">
+
+<!ENTITY selectjunkdelete.label "Junk-Ordner leeren">
+<!ENTITY selectjunkdelete.description "Junk-Ordner bei der Leerung mitberücksichtigen">
+<!ENTITY selectjunkdelete.accesskey "J">
+
+<!ENTITY consoledebug.label "Konsolen-Debugmeldungen aktivieren">
+<!ENTITY consoledebug.description "Markieren Sie diese Box, um Debugmeldungen in der Fehlerkonsole zu aktivieren. Wenn Sie Fehler melden, geben Sie den Inhalt der Debugmeldungen mit an.">
+<!ENTITY consoledebug.accesskey "D">
+
+<!ENTITY disabledonenotification.label "Erledigungsmeldung deaktivieren">
+<!ENTITY disabledonenotification.description "Markieren Sie diese Box um die Meldung nach Leerung aller konfigurierten Ordner zu deaktivieren">
+<!ENTITY disabledonenotification.accesskey "N">
+
+<!ENTITY alsocompact.label "Geleerte Ordner auch komprimieren">
+<!ENTITY alsocompact.description "Der geleerte Ordner wird auch komprimiert">
+<!ENTITY alsocompact.accesskey "C">

@@ -1,0 +1,14 @@
+<!ENTITY prefwindow.title "Empty 'em Einstellungen">
+<!ENTITY pane1.title "Empty 'em Einstellungen">
+<!ENTITY prefwindow.heading "Empty 'em Einstellungen festlegen:">
+<!ENTITY overridedeleteconfirm.label "Bestätigungseinstellung der Ordner überschreiben">
+<!ENTITY overridedeleteconfirm.accesskey "O">
+<!ENTITY prefwindow.selectionheading "Welche Ordner sollen geleert werden?">
+<!ENTITY selecttrashdelete.label "Papierkörbe leeren">
+<!ENTITY selecttrashdelete.accesskey "T">
+<!ENTITY selectjunkdelete.label "Junk-Ordner leeren">
+<!ENTITY selectjunkdelete.accesskey "J">
+<!ENTITY consoledebug.label "Konsolen-Debugmeldungen aktivieren">
+<!ENTITY consoledebug.accesskey "D">
+<!ENTITY disabledonenotification.label "Erledigungsmeldung deaktivieren">
+<!ENTITY disabledonenotification.accesskey "N">

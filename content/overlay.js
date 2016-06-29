@@ -224,7 +224,7 @@ var emptyem = {
   // Following function borrowed from:
   //   http://mxr.mozilla.org/comm-central/source/mail/base/content/folderPane.js#2216
   //
-  check_confirmation_prompt: function ftc_confirm(aCommand) {
+  check_confirmation_prompt: function ftc_confirm(aCommand, folderName) {
     var show_prompt = true;
     try {
       var pref = Cc["@mozilla.org/preferences-service;1"]
@@ -237,15 +237,16 @@ var emptyem = {
       var prompt_service = Cc["@mozilla.org/embedcomp/prompt-service;1"]
                              .getService(Ci.nsIPromptService);
       var bundle = document.getElementById("bundle_messenger");
+      var title = bundle.getFormattedString(aCommand + "FolderTitle", [folderName]);
       var ok = prompt_service.confirmEx(window,
-                                       bundle.getString(aCommand + "FolderTitle"),
+                                       title,
                                        bundle.getString(aCommand + "FolderMessage"),
                                        prompt_service.STD_YES_NO_BUTTONS,
                                        null, null, null,
                                        bundle.getString(aCommand + "DontAsk"),
                                        checkbox) == 0;
       if (checkbox.value)
-        pref.setBoolPref("mail." + aCommand + ".dontAskAgain", true);
+        pref.setBoolPref("mailnews." + aCommand + ".dontAskAgain", true);
       if (!ok)
         return false;
     }
@@ -551,7 +552,7 @@ var emptyem = {
     if (this.override_delete_confirm) {
       this.empty_junk_folder(junk_folder);
     } else {
-      if (this.check_confirmation_prompt("emptyJunk")) {
+      if (this.check_confirmation_prompt("emptyJunk", junk_folder.prettiestName)) {
         this.empty_junk_folder(junk_folder);
       }
     }
@@ -563,7 +564,7 @@ var emptyem = {
     if (this.override_delete_confirm) {
       this.empty_trash_folder(trash_folder);
     } else {
-      if (this.check_confirmation_prompt("emptyTrash")) {
+      if (this.check_confirmation_prompt("emptyTrash", trash_folder.prettiestName)) {
         this.empty_trash_folder(trash_folder);
       }
     }
