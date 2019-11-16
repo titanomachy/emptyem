@@ -9,7 +9,7 @@ xcopy install.rdf build
 xcopy chrome.manifest.dist build
 
 cd build\chrome
-C:\Programme\7-Zip\7z.exe a -tzip "%x%.jar" * -r -mx=0
+D:\code\scripts\javascript\thunderbird-plugins\empty-em\7-Zip\7z.exe a -tzip "%x%.jar" * -r -mx=0
 cd ..\..
 
 rmdir /s /q build\chrome\content
@@ -20,7 +20,7 @@ rem replace chrome.manifest build
 
 cd build
 rename chrome.manifest.dist chrome.manifest
-C:\Programme\7-Zip\7z.exe a -tzip "%x%.xpi" * -r -mx=9
+D:\code\scripts\javascript\thunderbird-plugins\empty-em\7-Zip\7z.exe a -tzip "%x%.xpi" * -r -mx=9
 cd ..
 
 move build\%x%.xpi %x%.xpi
